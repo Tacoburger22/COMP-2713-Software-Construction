@@ -1,5 +1,8 @@
 //Isaac Weiss
 //Project1.cpp
+//TO COMPILE: 
+//"g++ -std=c++11 Project1.cpp -o Project1", then "./Project1"
+//
 //I used Codecademy to learn the basics of C++.
 //I used StackOverflow for miscellaneous help.
 #include <iostream>
