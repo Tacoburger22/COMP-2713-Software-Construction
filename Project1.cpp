@@ -1,4 +1,4 @@
-//Isaac Weiss
+//Isaac Weiss icw0001
 //Project1.cpp
 //TO COMPILE: 
 //"g++ -std=c++11 Project1.cpp -o Project1", then "./Project1"
