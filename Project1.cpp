@@ -1,4 +1,3 @@
-
 //Isaac Weiss
 //Project1.cpp
 //I used Codecademy to learn the basics of C++.
@@ -13,6 +12,7 @@ int main() {
     double monthlyInterest, principal;
     int months = 0;
     string loanString;
+
     
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
@@ -23,11 +23,11 @@ int main() {
     loanString = to_string(loan);
     loanString.erase(remove(loanString.begin(), loanString.end(), ','), loanString.end());
     loan = stoi(loanString);
-    if (loan > 0) {
+    if (loan < 50) {
         cin.clear();
         cin.ignore(1000,'\n');
+        loan *= 1000;
     }
-    loan *= 1000;
     while (cin.fail() || loan <= 0) {
         cin.clear();
         cin.ignore(1000,'\n');
@@ -44,6 +44,7 @@ int main() {
     }
     interestRate /= 1200;
     cout << "Monthly Payments: ";
+    //cout << "\nLoan: " << loan << "\nInterest Rate: " << interestRate;
     cin >> monthly;
     while (cin.fail() || monthly <= 0 || monthly > loan || monthly < (loan*.01)) {
         cin.clear();
